@@ -42,7 +42,8 @@ class TodoController extends Controller
 
     public function edit($id)
     {
-        return view('edit_todo', compact('id'));
+        $datas = Todo::whereId($id)->first();
+        return view('edit_todo', compact('id', 'datas'));
     }
 
     public function update(Request $request, $id)
