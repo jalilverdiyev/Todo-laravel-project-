@@ -67,10 +67,10 @@
                                                     </th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="Todos">
                                                 @foreach($datas as $data)
                                                 <tr class="bg-gray-700 border-b dark:bg-gray-800 dark:border-gray-700">
-                                                    <th scope="row" class="text-center px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                    <th id="handle" scope="row" class="text-center px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                                         {{$data->task}}
                                                     </th>
                                                     <td class="text-center px-6 py-4 font-medium text-gray-900 dark:text-white break-words">
